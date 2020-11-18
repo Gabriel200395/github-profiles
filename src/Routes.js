@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Landing from "./Pages/Landing";
 import Profiles from "./Pages/Profiles";
+import CreateProfile from "./Pages/CreateProfile";
 
 export default function Routes() {
   return (
@@ -10,6 +11,7 @@ export default function Routes() {
       <Switch>
         <Route path="/" exact component={Landing} />
         <Route path="/profiles/:userName" component={Profiles} />
+        <Route path="/create-profile" component={CreateProfile} />
       </Switch>
     </BrowserRouter>
   );

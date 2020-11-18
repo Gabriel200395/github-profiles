@@ -27,7 +27,7 @@ export default function Repositorios({ userName }) {
               <li>{repositorio.language}</li>
               <li>atualizado {repositorio.updatedDistance}</li>
             </ul>
-            <a className="landing-repo-button" href={repositorio.svn_url}>
+            <a className="landing-repo-button" href={repositorio.repoUrl}>
               Github
             </a>
           </div>

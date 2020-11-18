@@ -22,6 +22,7 @@ const serializeRepositories = (repositiores) =>
       description: repo.description,
       language: repo.language,
       updatedAt: repo.updated_at,
+      repoUrl: repo.svn_url,
       updatedDistance,
     };
   });

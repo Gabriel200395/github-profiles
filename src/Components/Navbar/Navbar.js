@@ -1,5 +1,6 @@
 import React from "react";
 import "../../Styles/landing.css";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -23,6 +24,9 @@ export default function Navbar() {
           <a target="blank" href="https://gabriel200395.github.io/Portfolio/">
             Portfolio
           </a>
+        </li>
+        <li>
+          <Link to="/create-profile">Criar Perfil</Link>
         </li>
       </ul>
     </div>
