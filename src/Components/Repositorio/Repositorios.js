@@ -1,19 +1,16 @@
 import React, { useEffect, useState } from "react";
-import Axios from "axios";
+import api from "../../services/api";
 import "../../Styles/landing.css";
 
 export default function Repositorios() {
   const [repositorios, setRepositorios] = useState([]);
 
   useEffect(() => {
-    function repo() {
-      Axios.get("https://api.github.com/users/gabriel200395/repos").then(
-        (res) => {
-          setRepositorios(res.data);
-        }
-      );
+    async function fetchRepositories() {
+      const response = await api.fetchRepositories("Gabriel200395");
+      setRepositorios(response);
     }
-    repo();
+    fetchRepositories();
   }, []);
 
   return (
@@ -28,7 +25,7 @@ export default function Repositorios() {
             </p>
             <ul className="landing-repo-github">
               <li>{repositorio.language}</li>
-              <li>{repositorio.updated_at}</li>
+              <li>atualizado {repositorio.updatedDistance}</li>
             </ul>
             <a className="landing-repo-button" href={repositorio.svn_url}>
               Github

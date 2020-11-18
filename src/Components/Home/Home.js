@@ -1,30 +1,41 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
+import api from "../../services/api";
+import { set } from "date-fns";
 
 export default function Home() {
-  const [users, setUsers] = useState([]);
+  const [user, setUser] = useState({
+    avatarUrl: "",
+    name: "",
+    description: "",
+    userName: "",
+    publicReposCount: "",
+    followersCount: "",
+    createdAt: "",
+    createDistance: "",
+  });
 
   useEffect(() => {
-    function loading() {
-      Axios.get("https://api.github.com/users/gabriel200395").then((res) => {
-        setUsers(res.data);
-      });
+    async function fetchUserData() {
+      const response = await api.fetchUserData("Gabriel200395");
+      setUser(response);
     }
-    loading();
+
+    fetchUserData();
   }, []);
 
   return (
     <div className="landing-container-user">
-      <img className="imagem" src={users.avatar_url} alt={users} />
-      <h3 className="titulo-name">{users.name}</h3>
-      <h1 className="titulo">{users.bio}</h1>
+      <img className="imagem" src={user.avatarUrl} alt={user.name} />
+      <h3 className="titulo-name">{user.name}</h3>
+      <h1 className="titulo">{user.description}</h1>
       <ul>
-        <li>Username : {users.login}</li>
-        <li>Repositório : {users.public_repos}</li>
+        <li>Username : {user.userName}</li>
+        <li>Repositório : {user.publicReposCount}</li>
       </ul>
       <ul>
-        <li>Seguidores : {users.followers}</li>
-        <li>Criado : {users.created_at}</li>
+        <li>Seguidores : {user.followersCount}</li>
+        <li>Criado {user.createDistance}</li>
       </ul>
     </div>
   );
