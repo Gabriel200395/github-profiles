@@ -30,7 +30,7 @@ export default function Landing() {
   return (
     <section className="landing">
       <div className="landing-navbar">
-        <h1 className="Logo">GitHub</h1>
+        <h1 className="Logo">Gabriel Souza</h1>
         <ul>
           <li>Linkdin</li>
           <li>GitHub</li>
@@ -69,6 +69,10 @@ export default function Landing() {
           ))}
         </div>
       </section>
+
+      <footer>
+        <p>Developer Gabriel</p>
+      </footer>
     </section>
   );
 }
