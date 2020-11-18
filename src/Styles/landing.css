@@ -23,8 +23,7 @@
   padding: 0px 7px;
   color: #9fa0aa;
   font-family: "nunito", sans-serif;
-  font-size: 15px;
-  margin-bottom: 100px;
+  font-size: 13px;
 }
 
 .landing-container-user .titulo {
@@ -35,17 +34,29 @@
   font-size: 35px;
 }
 
+.landing-container-user .titulo-name {
+  color: #fbfdff;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
 .landing-container-repo {
   flex-wrap: wrap;
   display: flex;
+  justify-content: center;
 }
 
 .landing-repo-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 33.33%;
-  margin-top: 30px;
+  height: 191px;
+  width: 300px;
+  border-radius: 8px;
+  margin: 20px 19px;
+  border: solid 1px #fbfdff;
 }
 
 .landing-repo-card h3 {
@@ -54,6 +65,7 @@
   text-transform: uppercase;
   margin-bottom: 15px;
   color: #9fa0aa;
+  margin-top: 23px;
 }
 
 .landing-repo-description {
@@ -69,7 +81,8 @@
   text-align: center;
   font-family: "Montserrat", sans-serif;
   color: #fbfdff;
-  margin-bottom: 60px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .landing-repo-github {

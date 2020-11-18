@@ -30,7 +30,7 @@ export default function Landing() {
   return (
     <section className="landing">
       <div className="landing-navbar">
-        <h1 className="Logo">Gabriel Souza</h1>
+        <h1 className="Logo">Github Projects</h1>
         <ul>
           <li>Linkdin</li>
           <li>GitHub</li>
@@ -39,10 +39,13 @@ export default function Landing() {
       </div>
       <div className="landing-container-user">
         <img className="imagem" src={users.avatar_url} alt={users} />
+        <h3 className="titulo-name">{users.name}</h3>
         <h1 className="titulo">{users.bio}</h1>
         <ul>
           <li>Username : {users.login}</li>
           <li>Repositório : {users.public_repos}</li>
+        </ul>
+        <ul>
           <li>Seguidores : {users.followers}</li>
           <li>Criado : {users.created_at}</li>
         </ul>
