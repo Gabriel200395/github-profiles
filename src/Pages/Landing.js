@@ -73,8 +73,15 @@ export default function Landing() {
         </div>
       </section>
 
-      <footer>
-        <p>Developer Gabriel</p>
+      <footer className="Rodape">
+        <p>
+          Veja o código deste projeto em:
+          https://github.com/Gabriel200395/github-profiles
+        </p>
+        <a href="https://github.com/Gabriel200395/github-profiles">
+          {" "}
+          Feito por : Gabriel Souza
+        </a>
       </footer>
     </section>
   );

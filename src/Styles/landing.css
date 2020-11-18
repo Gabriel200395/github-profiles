@@ -56,7 +56,7 @@
   width: 300px;
   border-radius: 8px;
   margin: 20px 19px;
-  border: solid 1px #fbfdff;
+  border: solid 1px #9fa0aa;
 }
 
 .landing-repo-card h3 {
@@ -132,4 +132,19 @@
 .landing-navbar .Logo {
   padding: 0px 40px;
   font-family: "Montserrat", sans-serif;
+}
+
+.Rodape {
+  padding: 15px;
+  background-color: #121214;
+  text-align: center;
+  color: #fff;
+  font-family: "nunito", sans-serif;
+}
+
+.Rodape a {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
