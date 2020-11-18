@@ -3,7 +3,7 @@ import Axios from "axios";
 import api from "../../services/api";
 import { set } from "date-fns";
 
-export default function Home() {
+export default function Home({ userName }) {
   const [user, setUser] = useState({
     avatarUrl: "",
     name: "",
@@ -17,7 +17,7 @@ export default function Home() {
 
   useEffect(() => {
     async function fetchUserData() {
-      const response = await api.fetchUserData("Gabriel200395");
+      const response = await api.fetchUserData(userName);
       setUser(response);
     }
 

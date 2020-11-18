@@ -4,15 +4,15 @@ import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 import Repositorios from "../Components/Repositorio/Repositorios";
 import Home from "../Components/Home/Home";
+import { useParams } from "react-router-dom";
 
-const USER_NAME = "Gabriel200395";
-
-export default function Landing() {
+export default function Profiles() {
+  const { userName } = useParams();
   return (
     <section className="landing">
       <Navbar />
-      <Home userName={USER_NAME} />
-      <Repositorios userName={USER_NAME} />
+      <Home userName={userName} />
+      <Repositorios userName={userName} />
       <Footer />
     </section>
   );

@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import api from "../../services/api";
 import "../../Styles/landing.css";
 
-export default function Repositorios() {
+export default function Repositorios({ userName }) {
   const [repositorios, setRepositorios] = useState([]);
 
   useEffect(() => {
     async function fetchRepositories() {
-      const response = await api.fetchRepositories("Gabriel200395");
+      const response = await api.fetchRepositories(userName);
       setRepositorios(response);
     }
     fetchRepositories();
