@@ -26,7 +26,7 @@ export default function Navbar() {
           </a>
         </li>
         <li>
-          <Link to="/create-profile">Criar Perfil</Link>
+          <Link to="/create-profile">Criar</Link>
         </li>
       </ul>
     </div>
