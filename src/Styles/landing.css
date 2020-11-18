@@ -32,6 +32,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 35px;
+  text-align: center;
 }
 
 .landing-container-user .titulo-name {
@@ -149,4 +150,10 @@
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .landing-navbar {
+    flex-direction: column;
+  }
 }
