@@ -1,0 +1,121 @@
+.landing .landing-container-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.landing-container-user .imagem {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border: solid 10px #fbfdff;
+}
+
+.landing-container-user ul {
+  display: flex;
+}
+
+.landing-container-user li {
+  list-style: none;
+  padding: 0px 7px;
+  color: #9fa0aa;
+  font-family: "nunito", sans-serif;
+  font-size: 15px;
+  margin-bottom: 100px;
+}
+
+.landing-container-user .titulo {
+  color: #fbfdff;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.landing-container-repo {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.landing-repo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+  margin-top: 30px;
+}
+
+.landing-repo-card h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #9fa0aa;
+}
+
+.landing-repo-description {
+  width: 300px;
+  text-align: center;
+  font-family: "nunito", sans-serif;
+  color: #fbfdff;
+  font-size: 13px;
+}
+
+.repo h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #fbfdff;
+  margin-bottom: 60px;
+}
+
+.landing-repo-github {
+  display: flex;
+  justify-content: center;
+}
+
+.landing-repo-github li {
+  list-style: none;
+  margin: 0px 15px;
+  font-family: "nunito", sans-serif;
+  color: #fbfdff;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.landing-repo-button {
+  background-color: #68cb5f;
+  outline: none;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "nunito", sans-serif;
+  font-size: 13px;
+}
+
+.landing-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.landing-navbar ul {
+  display: flex;
+}
+
+.landing-navbar li {
+  list-style: none;
+  padding: 20px 20px;
+  font-family: "nunito", sans-serif;
+  font-size: 14px;
+  color: #68cb5f;
+}
+
+.landing-navbar .Logo {
+  padding: 0px 40px;
+  font-family: "Montserrat", sans-serif;
+}

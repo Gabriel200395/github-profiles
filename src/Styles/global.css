@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.landing {
+  background-color: #121214;
+  width: 100%;
+}
