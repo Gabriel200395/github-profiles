@@ -32,9 +32,15 @@ export default function Landing() {
       <div className="landing-navbar">
         <h1 className="Logo">Github Projects</h1>
         <ul>
-          <li>Linkdin</li>
-          <li>GitHub</li>
-          <li>Portfolio</li>
+          <li>
+            <a>Linkdin</a>
+          </li>
+          <li>
+            <a>GitHub</a>
+          </li>
+          <li>
+            <a>Portfolio</a>
+          </li>
         </ul>
       </div>
       <div className="landing-container-user">

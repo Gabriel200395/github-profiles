@@ -119,14 +119,16 @@
 
 .landing-navbar ul {
   display: flex;
+  list-style: none;
 }
 
-.landing-navbar li {
-  list-style: none;
+.landing-navbar li > a {
   padding: 20px 20px;
   font-family: "nunito", sans-serif;
   font-size: 14px;
   color: #68cb5f;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .landing-navbar .Logo {
