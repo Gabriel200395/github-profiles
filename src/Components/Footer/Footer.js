@@ -5,10 +5,14 @@ export default function Footer() {
   return (
     <footer className="Rodape">
       <p>
-        Veja o código deste projeto em:
-        https://github.com/Gabriel200395/github-profiles
+        <a
+          target="blank"
+          href="https://github.com/Gabriel200395/github-profiles"
+        >
+          Veja o código deste projeto em:
+        </a>
       </p>
-      <a href="https://github.com/Gabriel200395/github-profiles">
+      <a target="blank" href="https://github.com/Gabriel200395">
         Feito por : Gabriel Souza
       </a>
     </footer>

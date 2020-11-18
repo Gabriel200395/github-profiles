@@ -7,13 +7,22 @@ export default function Navbar() {
       <h1 className="Logo">Github Projects</h1>
       <ul>
         <li>
-          <a>Linkdin</a>
+          <a
+            target="blank"
+            href="https://www.linkedin.com/in/gabriel-souza-408451196/"
+          >
+            Linkdin
+          </a>
         </li>
         <li>
-          <a>GitHub</a>
+          <a target="blank" href="https://github.com/Gabriel200395">
+            GitHub
+          </a>
         </li>
         <li>
-          <a>Portfolio</a>
+          <a target="blank" href="https://gabriel200395.github.io/Portfolio/">
+            Portfolio
+          </a>
         </li>
       </ul>
     </div>
