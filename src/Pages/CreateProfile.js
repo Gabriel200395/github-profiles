@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
+import "../Styles/landing.css";
 
 function CreateProfile() {
   const [userName, setUserName] = useState("");
@@ -12,14 +13,22 @@ function CreateProfile() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     history.push(`/profiles/${userName}`);
   };
 
   return (
-    <div className="Search">
-      <input value={userName} name="userName" onChange={handleInputChange} />
-      <button onClick={handleSubmit}>Montar Perfil</button>
+    <div className="create-profile">
+      <form className="create-profile-form" onSubmit={handleSubmit}>
+        <h1 className="create-title">Crie seu Repositório do GitHub.</h1>
+        <input
+          placeholder="Escreva seu userName"
+          value={userName}
+          name="userName"
+          onChange={handleInputChange}
+          required
+        />
+        <button>Montar Perfil</button>
+      </form>
     </div>
   );
 }

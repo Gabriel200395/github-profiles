@@ -152,6 +152,49 @@
   cursor: pointer;
 }
 
+.create-profile {
+  background-color: #121214;
+  width: 100%;
+  height: 100vh;
+}
+
+.create-title {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+
+.create-profile-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.create-profile-form input {
+  width: 60%;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+}
+
+.create-profile-form button {
+  height: 40px;
+  width: 140px;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #68cb5f;
+}
+
 @media (max-width: 768px) {
   .landing-navbar {
     flex-direction: column;
