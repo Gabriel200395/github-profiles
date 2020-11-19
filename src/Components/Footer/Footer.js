@@ -9,7 +9,7 @@ export default function Footer() {
           target="blank"
           href="https://github.com/Gabriel200395/github-profiles"
         >
-          Veja o código deste projeto em:
+          Veja o código deste projeto clicando aqui
         </a>
       </p>
       <a target="blank" href="https://github.com/Gabriel200395">
