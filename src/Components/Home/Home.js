@@ -15,14 +15,24 @@ export default function Home({ userName }) {
     createDistance: "",
   });
 
+  const [erro, setError] = useState(false);
+
   useEffect(() => {
     async function fetchUserData() {
-      const response = await api.fetchUserData(userName);
-      setUser(response);
+      try {
+        const response = await api.fetchUserData(userName);
+        setUser(response);
+      } catch {
+        setError(true);
+      }
     }
 
     fetchUserData();
   }, []);
+
+  if (erro) {
+    return <h1>erro</h1>;
+  }
 
   return (
     <div className="landing-container-user">

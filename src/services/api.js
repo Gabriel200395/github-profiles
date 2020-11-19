@@ -50,7 +50,6 @@ const serializeUserData = (userData) => {
 
 const fetchRepositories = async (userName) => {
   const response = await api.get(`users/${userName}/repos`);
-
   return serializeRepositories(response.data);
 };
 
