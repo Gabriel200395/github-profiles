@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import repositorioApi from "../../services/repositorioApi";
+import githubApi from "../../services/githubApi";
 import "../../Styles/landing.css";
 
 export default function Repositorios({ userName }) {
@@ -7,7 +7,7 @@ export default function Repositorios({ userName }) {
 
   useEffect(() => {
     async function fetchRepositories() {
-      const response = await repositorioApi.fetchRepositories(userName);
+      const response = await githubApi.fetchRepositories(userName);
       setRepositorios(response);
     }
     fetchRepositories();

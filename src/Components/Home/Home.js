@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import homeApi from "../../services/homeApi";
+import githubApi from "../../services/githubApi";
 import ErrorPagina from "../ErrorPagina/ErrorPagina";
 
 export default function Home({ userName }) {
@@ -19,7 +19,7 @@ export default function Home({ userName }) {
   useEffect(() => {
     async function fetchUserData() {
       try {
-        const response = await homeApi.fetchUserData(userName);
+        const response = await githubApi.fetchUserData(userName);
         setUser(response);
       } catch {
         setError(true);
