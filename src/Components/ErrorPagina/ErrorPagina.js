@@ -6,7 +6,7 @@ function ErrorPagina() {
   return (
     <div className="create-profile-error">
       <h1 className="create-profile-title-error">
-        Esse Repositório não Existe no GitHub.
+        Esse Repositório não Existe no Github.
       </h1>
     </div>
   );

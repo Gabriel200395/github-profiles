@@ -19,7 +19,7 @@ function CreateProfile() {
   return (
     <div className="create-profile">
       <form className="create-profile-form" onSubmit={handleSubmit}>
-        <h1 className="create-title">Crie o seu proprío Github Profile</h1>
+        <h1 className="create-title">Crie o seu proprío Github Profile.</h1>
         <input
           placeholder="Degite o seu ursename do Github"
           value={userName}
