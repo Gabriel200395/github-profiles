@@ -14,7 +14,7 @@ export default function Navbar() {
             target="blank"
             href="https://www.linkedin.com/in/gabriel-souza-408451196/"
           >
-            Linkdin
+            Linkedin
           </a>
         </li>
         <li>
