@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Axios from "axios";
 import api from "../../services/api";
-import { set } from "date-fns";
+import ErrorPagina from "../ErrorPagina/ErrorPagina";
 
 export default function Home({ userName }) {
   const [user, setUser] = useState({
@@ -31,7 +30,7 @@ export default function Home({ userName }) {
   }, []);
 
   if (erro) {
-    return <h1>erro</h1>;
+    return <ErrorPagina />;
   }
 
   return (
