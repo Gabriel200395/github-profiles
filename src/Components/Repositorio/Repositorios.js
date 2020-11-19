@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import api from "../../services/api";
+import repositorioApi from "../../services/repositorioApi";
 import "../../Styles/landing.css";
 
 export default function Repositorios({ userName }) {
@@ -7,7 +7,7 @@ export default function Repositorios({ userName }) {
 
   useEffect(() => {
     async function fetchRepositories() {
-      const response = await api.fetchRepositories(userName);
+      const response = await repositorioApi.fetchRepositories(userName);
       setRepositorios(response);
     }
     fetchRepositories();
