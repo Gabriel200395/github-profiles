@@ -1,71 +1,85 @@
-# Getting Started with Create React App
+<h1 align="center">GS Control System</h1>
+<h4 align="center">
+  <img src="./public/IMG/controleEstoque.gif"/><br>
+</h4>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#page_facing_up-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#pencil-autor">Autor</a>
+</p>
 
-## Available Scripts
+## :wrench: Tecnologias
 
-In the project directory, you can run:
+<!--EXEMPLO:-->
+- [React](https://pt-br.reactjs.org/)
+- [Yup](https://formik.org/docs/guides/validation)
+- [Axios](https://www.npmjs.com/package/axios)
+- [React Router](https://www.npmjs.com/package/react-router-dom)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## :page_facing_up: Sobre
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+Projeto que desenvolvi baseado em controle de estoques de empresas. Onde é possível cadastrar produtos de qualquer tipo, listar todos os produtos cadastrados, editar algum produto em especifico ou até deletar produtos da base de dados. Um caso de uso interessante seria mercados utilizarem essa aplicação para facilitar o controle de estoque, podendo visualizar, com maior facilidade, todas as informações importantes de seus estoques. Caso queira saber mais sobre o projeto, clique no botão abaixo.
+## 💻 Como usar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clone o projeto: `git clone https://github.com/Gabriel200395/gs-stock-control.git`
+- Entrar na pasta do projeto: `cd gs-stock-control`
+- Iniciar a aplicação: `npm start`
+- baixe na aplicação: `npm install`
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Irá abrir uma página no browser (se não abrir, vá até [http://localhost:8080](http://localhost:8080/)).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :heart_eyes: Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h3 align="center">Tela da Home</h3>
+<h4 align="center">
+  <img src="/public/IMG/home.png" /><br>
+</h4>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h3 align="center">Tela de Cadastro da Empresa</h3>
+<h4 align="center">
+  <img src="/public/IMG/produtos.png" /><br>
+</h4>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h3 align="center">Tela de Cadastro de Produtos</h3>
+<h4 align="center">
+  <img src="/public/IMG/lista1.png" /><br>
+</h4>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<h3 align="center">Tela Lista Produtos</h3>
+<h4 align="center">
+  <img src="/public/IMG/lista.png" /><br>
+</h4>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+<h3 align="center">Tela de Pesquisa da Empresa</h3>
+<h4 align="center">
+  <img src="/public/IMG/Pesquisa.png" /><br>
+</h4>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<h3 align="center">Tela de Visualizar Produtos</h3>
+<h4 align="center">
+  <img src="/public/IMG/ver.png" /><br>
+</h4>
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## :pencil: Autor
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# github-profiles
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Gabriel200395"><img src="https://avatars2.githubusercontent.com/u/68435908?s=400&u=9cbee30d93471534b2bd12a6364edd45e618b923&v=4" width="100px;" alt=""/><br /><sub><b>Gabriel Souza</b></sub></a><br /></td>
+  <tr>
+</table>
